@@ -26,15 +26,13 @@ import { ShoppingListService } from './shopping-list/shopping-list.service';
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    DropdownDirective,
-    RecipeService,
-    ShoppingListService,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [RecipeService, ShoppingListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
